@@ -1,0 +1,137 @@
+.header {
+    background-color: rgba(0, 255, 255, 0.623);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.addTaskSection {
+    display: flex;
+    justify-content: center;
+    height: 12%;
+    padding-top: 2%;
+}
+
+.addTaskSection input {
+    width: 65%;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(168, 167, 167, 0.4);
+    padding-left: 1.5rem;
+    box-shadow: -2px -2px 15px rgba(255, 255, 255, 0.6), 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.addTaskSection input:focus {
+    border: none;
+    outline: none;
+    transform: scale(1.02);
+    margin-right: .3rem;
+}
+
+.addTaskSection button {
+    width: 10%;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.7);
+    box-shadow: 10px -2px 15px rgba(110, 110, 110, 0.5), 10px 2px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.addTaskSection:focus-within button {
+    transform: scale(1.02);
+}
+
+.tasksSection {
+    height: 65%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tasksSection::-webkit-scrollbar {
+    width: 0;
+}
+
+.tasksSection > :first-child {
+    margin-top: 1rem;
+}
+
+.task {
+    width: 70%;
+    display: flex;
+    height: 2rem;
+    margin-bottom: .8rem;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: -2px -2px 15px rgba(255, 255, 255, 0.6), 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: .3s;
+}
+
+.task:hover {
+    background-color: rgba(143, 143, 143, 0.308);
+    transform: scale(1.02);
+}
+
+.task button:first-child {
+    background-color: transparent;
+    flex: 0 0 85%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.task button:first-child > :first-child {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    margin: auto 0;
+    padding-top: .2rem;
+    color: white;
+}
+
+.task button:first-child > :last-child {
+    font-size: 1.2rem;
+}
+
+.task button:last-child {
+    background-color: transparent;
+    flex: 0 0 10%;
+    border: none;
+
+}
+
+.task button:last-child > :first-child {
+   font-size: 1.5rem;
+   color: white;
+   padding-top: .2rem;
+   transition: .2s;
+   cursor: pointer;
+}
+
+.task button:last-child > :first-child:hover {
+   font-size: 1.5rem;
+   color: rgba(255, 0, 0, 0.719);
+   padding-top: .2rem;
+}
+
+.deleteAll {
+    float: right;
+    margin: 1%;
+    margin-right: 10%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.deleteAll:hover {
+    color: rgba(255, 0, 0, 0.719);
+}
