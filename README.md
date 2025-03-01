@@ -1,6 +1,7 @@
 # React Todo List App
 
 A simple and interactive Todo List application built with React. This app allows users to add, toggle, and delete tasks, providing a user-friendly interface for managing daily activities.
+[Check out the demo]([https://your-demo-url.com](https://lucky-ikefe.github.io/todo-list-app-2/))
 
 ## Features
 
